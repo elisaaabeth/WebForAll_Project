@@ -1,0 +1,286 @@
+body {
+    background-color: #D9D9D9;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .banner {
+    background-image: url(../image/telework.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .banner::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34,34,34,0.55);
+  }
+
+  .banner h2 {
+    color: #fff;
+    font-size: 48px;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .cadre {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .titre {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #276FB2;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+
+  .form_group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+    align-items: center;
+  }
+
+  label {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  input[type="text"],
+  textarea,
+  select {
+    width: 100%;
+    max-width: 600px;
+    height: 45px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #222;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  textarea {
+    height: 150px;
+    resize: none;
+  }
+
+  .champ-drop {
+    border: 3px dashed #222;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+
+  .champ-drop i {
+    font-size: 60px;
+    color: #D9D7DF;
+  }
+
+  .champ-drop button {
+    background-color: #5098F8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .radio_group {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .radio_group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .btnValide {
+    display: block;
+    width: 300px;
+    margin: 50px auto;
+    padding: 15px;
+    background-color: #5098F8;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  body {
+    background-color: #D9D9D9;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .banner {
+    background-image: url(../image/telework.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .banner::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(34,34,34,0.55);
+  }
+
+  .banner h2 {
+    color: #fff;
+    font-size: 48px;
+    z-index: 1;
+    text-align: center;
+  }
+
+  .cadre {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .titre {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #276FB2;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+
+  .form_group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+    align-items: center;
+  }
+
+  label {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  input[type="text"],
+  textarea,
+  select {
+    width: 100%;
+    max-width: 600px;
+    height: 45px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #222;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  textarea {
+    height: 150px;
+    resize: none;
+  }
+
+  .champ-drop {
+    border: 3px dashed #222;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 30px;
+  }
+
+  .champ-drop i {
+    font-size: 60px;
+    color: #D9D7DF;
+  }
+
+  .champ-drop button {
+    background-color: #5098F8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  .radio_group {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .radio_group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .btnValide {
+    display: block;
+    width: 300px;
+    margin: 50px auto;
+    padding: 15px;
+    background-color: #5098F8;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+  }

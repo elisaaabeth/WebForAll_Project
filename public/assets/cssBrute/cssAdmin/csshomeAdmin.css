@@ -1,0 +1,183 @@
+/* Barre de navigation */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #CCEBFD; /* Couleur de fond */
+    padding: 5px 100px;
+    font-family: Arial, sans-serif;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left img {
+    height: 50px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    margin-left: 50px;
+    flex-wrap: wrap; /* Ajouté pour s'adapter à des petits écrans */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #276FB2; /* Bleu */
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 20px; /* Bord arrondi */
+}
+
+.nav-links a:hover {
+    background-color: white;
+    padding: 8px 15px; /* Garde la même taille */
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-buttons button {
+    padding: 8px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.button-connect {
+    background-color: #276FB2;
+    color: white;
+    font-weight: bold;
+}
+
+.button-connect:hover {
+    background-color: white;
+    color: #276FB2;
+    font-weight: bold;
+}
+
+.button-register {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.button-register:hover {
+    background-color: grey;
+    color: white;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background-color: #D2EBFF; /* Bleu clair */
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap; /* Permet au footer de s'adapter */
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px; /* Largeur minimale */
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.footer-column a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 200px;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-bottom {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #008cff;
+    text-decoration: none;
+}
+
+/* Styles pour le bouton "Mon espace" */
+.button-espace {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 8px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.button-espace:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Styles pour le menu déroulant */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+

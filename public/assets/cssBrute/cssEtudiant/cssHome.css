@@ -1,0 +1,263 @@
+:root  /*variable*/ {
+    --offre: rgba(148, 148, 160, 0.589);
+    --couleur1: rgb(8, 8, 246);
+    --couleur2: rgb(127, 127, 234);
+    --couleur3: rgba(255, 255, 255, 0.724);
+    --bg: #fff;
+    --text: black;
+
+    /* Couleur en plus que j'ai jouté*/
+    --text-blue:#276FB2;
+    --bg-color:#CCEBFD;
+
+}
+
+/* Réinitialisation de base */
+*{
+    box-sizing: border-box;     /* Assure que le padding et la bordure sont inclus dans la largeur totale */
+    margin: 0;                  /* Supprime les marges par défaut */
+    padding: 0;                 /* Supprime le padding par défaut */
+    text-decoration: none;      /* Supprime le soulignement des liens */
+    list-style: none;           /* Supprime les puces des listes */
+    font-family: Arial;         /* Définit la police de caractères par défaut */
+}
+
+/* Barre de navigation */
+.navbar {
+    display: flex;                                  /* Affiche les éléments en ligne */
+    justify-content: space-between;                 /* Espace entre les éléments */
+    align-items: center;                            /* Centre les éléments verticalement */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);     /* Ombre portée */
+    background-color: #CCEBFD;                    /* Couleur de fond */
+    padding: 5px 10px;                              /* Espacement interne */
+}
+
+/* Logo */
+.logo img {
+    width: 100px;
+    object-fit: contain;
+    height: auto;
+}
+
+/* Liste des liens */
+.nav-links {
+    display: flex;          /* Affiche les éléments en ligne */
+    padding: 0.5rem 1rem;   /* Ajoute un espacement autour de la liste */
+    margin-right: auto;     /* Ajoute un espacement à droite de la liste */
+    list-style: none;       /* Supprime les puces de la liste */
+}
+
+/* Liste des liens de la navbar */
+.nav-links li {
+    margin: 10px 20px;
+    background-color: var(--bg-color);
+}
+
+/* Liens de la navbar */
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-blue); /* Bleu */
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 20px; /* Bord arrondi */
+}
+
+/* Effet de survol pour les liens de la navbar */
+.nav-links a:hover {
+    background-color: white;
+    padding: 8px 15px; /* Garde la même taille */
+    border-radius: 20px; /* Bord arrondi */
+}
+
+/* Liste des boutons de connexion */
+/* Styles pour le bouton Mon Espace */
+.mon-espace {
+    position: relative;
+    display: inline-block;
+}
+
+.mon-espace-button {
+    padding: 8px 30px;              /* Espacement interne */
+    font-size: 14px;                /* Taille de la police */
+    border-radius: 5px;             /* Bord arrondi */
+    transition: 0.3s;               /* Transition pour l'effet de survol */
+    text-decoration: none;          /* Supprime le soulignement */
+    background-color: #276FB2;    /* Couleur de fond */
+    color: white;                 /* Couleur du texte */
+    font-weight: bold;             /* Gras */
+    border: none;
+    cursor: pointer;
+}
+
+.mon-espace-menu {
+    display: none;               /* Masque le menu par défaut */
+    position: absolute;          /* Position absolue pour le menu */
+    top: 100%;                   /* Positionne le menu en dessous du bouton */
+    right: 0;                    /* Aligne le menu à droite */
+    background-color: #f9f9f9; /* Couleur de fond */
+    padding: 10px;
+}
+
+.mon-espace-menu ul {
+    list-style: none;
+    padding: 50;
+    margin: 5;
+}
+
+.mon-espace-menu li {
+    margin: 15px;
+}
+
+.mon-espace-menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+.mon-espace-menu a:hover {
+    color: #276FB2;
+}
+
+/* Cacher le menu burger sur pc */
+.menu-icon, #menu-toggle {
+    display: none;
+}
+
+/* Footer */
+.footer {
+    background-color: #D2EBFF; /* Bleu clair */
+    padding: 30px;
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+/** Colonnes du footer */
+.footer-columns {
+    list-style: none;    /* Supprime les puces de la liste */
+    padding: 0;
+    margin: 0;
+    display: flex;      /* Affiche les colonnes en ligne */
+    flex: 1;           /* Prend tout l'espace disponible */
+    min-width: 20px;
+}
+
+/** Colonnes individuelles du footer */
+.footer-column {
+    flex: 1;
+    min-width: 20px;
+}
+
+/** Titre des colonnes du footer */
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+/** Liste des éléments du footer */
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Éléments de la liste du footer */
+.footer-column li {
+    margin: 30px 0;
+}
+
+/* Liens des éléments de la liste du footer */
+.footer-column a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: black;
+    font-size: 14px;
+}
+
+/* Effet de survol pour les liens du footer */
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/** Logo du footer */
+.footer-logo img {
+    width: 100px;
+}
+
+/** Bas du footer */
+.footer-bottom {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Liens du bas du footer */
+.footer-bottom a {
+    color: #008cff;
+    text-decoration: none;
+}
+
+
+
+/* Responsive design de la navbar et du footer*/
+@media screen and (max-width: 865px) {
+    .menu-icon {
+        display: block;      /* Affiche le menu burger sur mobile */
+        font-size: 2rem;     /* Taille de la police pour le menu burger */
+        cursor: pointer;     /* Curseur de pointeur pour le menu burger */
+    }
+
+    /* Cacher le menu burger sur mobile */
+    .nav-links {
+        display: none;
+        position: absolute;      /* Position absolue pour le menu burger */
+        top: 70px;               /* Positionne le menu en dessous de la barre de navigation */
+        left: 0;                 /* Aligne le menu à gauche */
+        flex-direction: column;  /* Affiche les éléments en colonne */
+        width: 100%;             /* Prend toute la largeur de l'écran */
+        background: var(--bg-color);
+    }
+
+    /* Cacher le bouton de connexion sur mobile */
+    .login-button {
+        text-align: center;
+    }
+
+    /* Éléments de la liste du menu burger */
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .login-button li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Éléments de la liste du menu burger */
+    .footer-logo img {
+        width: 50px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin: 10px;
+    }
+
+    .footer-logo img {
+        width: 50px;
+    }
+    /* Afficher le menu quand on coche */
+    #menu-toggle:checked + .menu-icon + .nav-links{
+        display: flex;
+    }
+    #menu-toggle:checked + .menu-icon + .nav-links + .login-button {
+        display: flex;
+    }
+}
+
